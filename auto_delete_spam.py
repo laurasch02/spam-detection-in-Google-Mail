@@ -23,7 +23,7 @@ SCOPES = 'https://mail.google.com/'
 class AutoDeleteException(Exception):
     pass
 
-### service to acces the mailsbox ###
+### service to acces the mailbox ###
 
 SERVICE = None
 
@@ -79,5 +79,6 @@ def delete_messages(query, user_id='me'):
 if __name__ == "__main__":
     init()
     logger.info('Deleting Messages from info@i.drop.com')
-    delete_messages('from: info@i.drop.com\
-        older_than: 1d')
+    delete_messages('from: some@email.com\
+        subject: "some subject"\
+        older_than:1d')
