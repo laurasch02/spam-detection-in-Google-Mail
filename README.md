@@ -1,2 +1,2 @@
 # spam-detection-in-Google-Mail
-detect spam emails in your google mail inbox
+delete spam emails in your gmail inbox matching the query for spam.
